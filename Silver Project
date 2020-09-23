@@ -1,0 +1,16 @@
+@echo off
+if not exist username.txt goto username
+REM Drawing the main screen code here lol
+:home
+echo.
+echo.
+
+
+
+
+REM If the :home has an error or something that causes it to skip all the commands this will show and we can re-use it
+:error
+cls
+echo There was a error. Sorry!
+timeout /t 3 >nul
+goto error
