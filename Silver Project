@@ -4,7 +4,14 @@ REM Drawing the main screen code here lol
 :home
 echo.
 echo.
-
+echo Welcome %username%!
+echo.
+echo 1 to go to server list
+echo 2 to connect to server
+echo 3 for help.
+echo 4 for a new username
+echo.
+set /p input=Input:
 
 
 
@@ -13,4 +20,4 @@ REM If the :home has an error or something that causes it to skip all the comman
 cls
 echo There was a error. Sorry!
 timeout /t 3 >nul
-goto error
+goto home
