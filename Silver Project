@@ -13,6 +13,14 @@ echo 4 for a new username
 echo.
 set /p input=Input:
 
+if %input% == 1 goto error
+if %input% == 2 goto connect
+if %input% == 3 goto error
+if %input% == 4 goto error
+
+REM :error is a placeholder
+
+
 
 
 REM If the :home has an error or something that causes it to skip all the commands this will show and we can re-use it
