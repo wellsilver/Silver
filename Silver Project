@@ -20,6 +20,10 @@ if %input% == 4 goto error
 
 REM :error is a placeholder
 
+:connect
+echo %username%>>send.txt
+
+
 
 
 
