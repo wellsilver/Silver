@@ -32,7 +32,7 @@ echo set /a Username=%username% >>username.bat
 
 
 :connect
-echo %username% >>send.txt
+echo #%username% >>send.txt
 
 
 
