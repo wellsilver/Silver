@@ -1,5 +1,6 @@
 @echo off
-if not exist username.txt goto username
+if not exist username.bat goto username
+username.bat
 REM Drawing the main screen code here lol
 :home
 echo.
@@ -17,13 +18,22 @@ if %input% == 1 goto error
 if %input% == 2 goto connect
 if %input% == 3 goto error
 if %input% == 4 goto error
+rem "ERROR" is placeholder for features.
 
-REM :error is a placeholder
+
+:username
+cls
+echo.
+echo Type in your username.
+echo.
+set /p username=Username:
+del username.bat
+echo set /a Username=%username% >>username.bat
+
 
 :connect
-echo %username%>>send.txt
+echo %username% >>send.txt
 
-e
 
 
 
