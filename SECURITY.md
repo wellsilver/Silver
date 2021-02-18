@@ -4,9 +4,9 @@ Supported Versions:
 
 Version | Supported       
 
-Client_pre1 | :X:
+Client_pre1 | :x:
 
 
 ## Reporting a Vulnerability
 
-There is no possible way for security to matter right now. When the server comes out I will put instructions.
+security doesnt matter right now. When the server comes out I will put instructions.
