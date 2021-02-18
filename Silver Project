@@ -23,7 +23,7 @@ REM :error is a placeholder
 :connect
 echo %username%>>send.txt
 
-
+e
 
 
 
