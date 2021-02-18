@@ -29,3 +29,8 @@ cls
 echo There was a error. Sorry!
 timeout /t 3 >nul
 goto home
+:disconnect
+echo.
+echo You where disconnected from the server.
+pause
+goto home
