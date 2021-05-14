@@ -9,6 +9,7 @@ echo 1 to go to server list
 echo 2 to connect to server
 echo 3 for help.
 echo 4 for a new username
+echo 5 for account stats
 echo.
 set /p input=Input:
 
@@ -18,9 +19,19 @@ if %input% == 3 echo Error
 if %input% == 4 echo Error
 
 
+:serverlist
+echo %1%
+echo %2%
+echo %3%
+echo %4%
+
 :connect
 echo %username%>>send.txt
-:: code here that activates joining
+
+REM code here that runs audio
+
+
+
 
 
 
