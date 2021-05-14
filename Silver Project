@@ -1,6 +1,5 @@
 @echo off
 if not exist username.txt goto username
-REM Drawing the main screen code here lol
 :home
 echo.
 echo.
@@ -13,26 +12,19 @@ echo 4 for a new username
 echo.
 set /p input=Input:
 
-if %input% == 1 goto error
+if %input% == 1 echo Error
 if %input% == 2 goto connect
-if %input% == 3 goto error
-if %input% == 4 goto error
+if %input% == 3 echo Error
+if %input% == 4 echo Error
 
-REM :error is a placeholder
 
 :connect
 echo %username%>>send.txt
+:: code here that activates joining
 
 
 
 
-
-REM If the :home has an error or something that causes it to skip all the commands this will show and we can re-use it
-:error
-cls
-echo There was a error. Sorry!
-timeout /t 3 >nul
-goto home
 :disconnect
 echo.
 echo You where disconnected from the server.
