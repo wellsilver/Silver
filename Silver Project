@@ -1,7 +1,6 @@
 @echo off
 if not exist config.bat goto config
 echo Creating unique ID to identify yourself.
-set /a id %random% %random% %random%
 :home
 cls
 echo.
@@ -21,10 +20,10 @@ if %input% == 2 goto connect
 if %input% == 3 echo Error
 if %input% == 4 echo Error
 if %input% == 5 echo Error
-
+goto home
 
 :serverlist
-REM n = name ip = ipv4 or domain. stat= online or offline by just reading a .bat
+REM n = name ip = ipv4 or domain. stat= online or offline
 echo %1n% %1ip% %1stat%
 echo %2n% %2ip% %2stat%
 echo %3n% %3ip% %3stat%
