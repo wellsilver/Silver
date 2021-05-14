@@ -1,1 +1,4 @@
 @echo off
+echo Beggining setup....
+REM because this is server and for debug turn echo on
+@echo on
