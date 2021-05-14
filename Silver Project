@@ -1,6 +1,9 @@
 @echo off
 if not exist config.bat goto config
+echo Creating unique ID to identify yourself.
+set /a id %random% %random% %random%
 :home
+cls
 echo.
 echo.
 echo Welcome %username%!
@@ -21,7 +24,7 @@ if %input% == 5 echo Error
 
 
 :serverlist
-REM n = name ip = ipv4 or domain. stat= ping check.
+REM n = name ip = ipv4 or domain. stat= online or offline by just reading a .bat
 echo %1n% %1ip% %1stat%
 echo %2n% %2ip% %2stat%
 echo %3n% %3ip% %3stat%
@@ -29,6 +32,7 @@ echo %4n% %4ip% %4stat%
 
 :connect
 echo %username%>>send.txt
+echo %id%>>send.txt
 
 REM code here that runs audio
 
