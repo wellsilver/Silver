@@ -1,5 +1,5 @@
 @echo off
-if not exist username.txt goto username
+if not exist config.bat goto config
 :home
 echo.
 echo.
@@ -13,17 +13,19 @@ echo 5 for account stats
 echo.
 set /p input=Input:
 
-if %input% == 1 echo Error
+if %input% == 1 goto serverlist
 if %input% == 2 goto connect
 if %input% == 3 echo Error
 if %input% == 4 echo Error
+if %input% == 5 echo Error
 
 
 :serverlist
-echo %1%
-echo %2%
-echo %3%
-echo %4%
+REM n = name ip = ipv4 or domain. stat= ping check.
+echo %1n% %1ip% %1stat%
+echo %2n% %2ip% %2stat%
+echo %3n% %3ip% %3stat%
+echo %4n% %4ip% %4stat%
 
 :connect
 echo %username%>>send.txt
