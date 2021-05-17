@@ -30,8 +30,8 @@ echo %3n% %3ip% %3stat%
 echo %4n% %4ip% %4stat%
 
 :connect
-echo %username%>>send.txt
-echo %id%>>send.txt
+echo set /a USER=%username%>>send.txt
+echo set /a ID=%id%>>send.txt
 
 REM code here that runs audio
 
