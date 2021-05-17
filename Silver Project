@@ -1,15 +1,15 @@
 @echo off
 if not exist config.bat goto config
-echo Creating unique ID to identify yourself.
+set /a ID=%random%.%random%
 :home
 cls
-echo.
+echo %ver% %ID%
 echo.
 echo Welcome %username%!
 echo.
 echo 1 to go to server list
 echo 2 to connect to server
-echo 3 for help.
+echo 3 for help
 echo 4 for a new username
 echo 5 for account stats
 echo.
@@ -30,8 +30,8 @@ echo %3n% %3ip% %3stat%
 echo %4n% %4ip% %4stat%
 
 :connect
-echo set /a USER=%username%>>send.txt
-echo set /a ID=%id%>>send.txt
+echo set /a USER=%username%>>send.bat
+echo set /a ID=%id%>>send.bat
 
 REM code here that runs audio
 
