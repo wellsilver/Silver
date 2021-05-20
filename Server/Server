@@ -1,4 +1,6 @@
 @echo off
 echo Beggining setup....
 REM because this is server and for debug turn echo on
+REM do a beautiful show of @echo off and @echo on's lol
 @echo on
+call config.bat
