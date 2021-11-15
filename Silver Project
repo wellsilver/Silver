@@ -1,6 +1,6 @@
 @echo off
 if not exist config.bat goto config
-set /a ID=%random%.%random%
+set /a ID=%random%.%random% ::probably will never use lol
 :home
 cls
 echo %ver% %ID%
